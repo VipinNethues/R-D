@@ -36,11 +36,11 @@
 
 // $Id: Dummy.php,v 1.6 2004/03/22 20:35:58 ieure Exp $
 
- 
+
 
 require_once 'Payment/Process/Common.php';
 
- 
+
 
 /**
 
@@ -90,7 +90,7 @@ class Payment_Process_Dummy extends Payment_Process_Common {
 
     );
 
- 
+
 
     var $_returnValues = array(
 
@@ -107,7 +107,7 @@ class Payment_Process_Dummy extends Payment_Process_Common {
             'code' => PAYMENT_PROCESS_RESULT_DECLINED,
 
             'message' => "Declined",
-             'newtest' => "Pass"
+             'newtest' => "Fail"
 
         ),
 
@@ -121,7 +121,7 @@ class Payment_Process_Dummy extends Payment_Process_Common {
 
     );
 
- 
+
 
     /**
 
@@ -145,7 +145,7 @@ class Payment_Process_Dummy extends Payment_Process_Common {
 
         }
 
- 
+
 
         if ($this->_options['randomResult']) {
 
@@ -165,7 +165,7 @@ class Payment_Process_Dummy extends Payment_Process_Common {
 
         }
 
- 
+
 
         return Payment_Process_Result::factory('Dummy');
 
@@ -173,7 +173,7 @@ class Payment_Process_Dummy extends Payment_Process_Common {
 
 }
 
- 
+
 
 class Payment_Process_Result_Dummy extends Payment_Process_Result {
 
