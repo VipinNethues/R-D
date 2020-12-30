@@ -68,7 +68,7 @@ class Payment_Process_Dummy extends Payment_Process_Common {
 
     /**
 
-     * Default options for this class.
+     * Default options for this class group.
 
      *
 
@@ -106,7 +106,8 @@ class Payment_Process_Dummy extends Payment_Process_Common {
 
             'code' => PAYMENT_PROCESS_RESULT_DECLINED,
 
-            'message' => "Declined"
+            'message' => "Declined",
+             'newtest' => "Pass"
 
         ),
 
